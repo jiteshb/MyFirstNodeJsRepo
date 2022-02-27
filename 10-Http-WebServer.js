@@ -8,6 +8,12 @@ const server = http.createServer((req, res) => {
         res.write("About Application");
         res.end();
     }else {
+        //DEMO BLOCKING OPERATIONS
+        /*for(let i=0; i<10000; i++){
+            for(let j=0; j<10000; j++){
+                console.log("not just blocked THIS user hitting error page, but all users who would hit about page..");
+            }
+        }*/
         res.end(`<h1>Error Application</h1> 
                 <a href="/"> BACK </a>`);    
     }

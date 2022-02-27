@@ -4,4 +4,4 @@ if(number>12){
 }else{
     console.log("Small Number");
 }
-console.log("Done with my first Application!")
+console.log("Done with my first Application  !")
